@@ -2,75 +2,177 @@
   margin: 0;
   padding: 0;
   box-sizing: 0;
-  /* box-shadow: 1px 1px  */
+  /* box-shadow: 1px 1px 1px 1px; */
 }
 body {
   background-color: aliceblue;
   display: flex;
   flex-direction: column;
-  background-image: url(./preview.jpg);
-  margin: auto;
-  height: auto;
+  background-image: url(./hai.jpg);
+  background-size: cover;
+  /* overflow: hidden; */
+
+  margin: 10px;
+  height: 100vh;
 }
-input {
-  background-color: rgb(240, 236, 232);
-  border-radius: 80px;
-  backdrop-filter: blur(10px);
-  width: 300px;
-  height: 25px;
-  text-align: center;
-  background-color: transparent;
+#box {
+  width: 380px;
+
+  margin: 30px auto;
+
+  font-family: "Microsoft YaHei";
+
+  font-size: 14px;
 }
 
+/* 输入框 */
+input {
+  /* background-color: rgb(240, 236, 232); */
+  border-radius: 80px;
+  backdrop-filter: blur(15px);
+  width: 50vh;
+  height: 20%;
+  text-align: center;
+  background-color: transparent;
+  margin: 85px;
+  box-shadow: 0px 2px 2px 2px rgb(60, 69, 72);
+}
+img {
+  border-radius: 8px;
+}
+/* 去掉overflow条框 */
+div::-webkit-scrollbar {
+  display: none;
+}
+/* 头部栏 */
 .tou {
   display: flex;
-  width: auto;
-  height: 100px;
+  flex: 1;
   backdrop-filter: blur(8px);
-  border-radius: 40px;
+  border-radius: 8px;
   box-shadow: 1px 1px 10px rgb(103, 121, 140);
   justify-content: center;
+  z-index: 1;
 }
+th {
+}
+
+/* 身体 */
 .box2 {
   display: flex;
   justify-self: center;
   height: 100vh;
   image-rendering: url(./toutu.jpeg);
 }
-.zuoche,
+/* 右侧 */
 .youche {
   display: flex;
   flex-direction: column;
 
-  align-items: center;
-  height: 99vh;
-  width: 20%;
+  flex: 1;
+  width: 30%;
+  height: 100vh;
   border-radius: 10px;
-  box-shadow: 1px 1px 10px rgb(103, 121, 140);
+  box-shadow: 10px 10px 10px 10px rgb(103, 121, 140);
   backdrop-filter: blur(8px);
 }
+/* 导航内容 */
 .daohang {
   display: flex;
   flex-direction: column;
+  align-items: center;
+  box-shadow: 1px 1px 10px 1px rgb(103, 121, 140);
+  backdrop-filter: blur(8px);
+  border-radius: 15px;
+  height: 50%;
 }
+/* 我的页面 */
+.wode {
+  display: flex;
+  flex-direction: column;
+  height: 50%;
+  align-items: center;
+  box-shadow: 1px 1px 10px 1px rgb(103, 121, 140);
+  backdrop-filter: blur(8px);
+  border-radius: 15px;
+}
+/* 个人信息 */
+.gerenxinxi {
+  display: flex;
+  flex-direction: column;
+  width: 100px;
+  /* justify-content: center; */
+  align-items: center;
+}
+/* 内容块 */
 .neirong {
   display: flex;
   flex-direction: column;
   align-items: center;
-
-  flex: 1;
+  overflow: auto;
+  flex: 3;
   width: 80%;
 }
+/* 头部栏图片 */
 .toutu {
   float: left;
   border-radius: 50%;
   height: 100px;
+  width: 100px;
   overflow: hidden;
 }
-.tuijian {
+/* 我的头像 */
+.touxiang {
+  float: left;
+  border-radius: 50%;
+  height: 10vh;
+  width: 10vh;
+  overflow: hidden;
+}
+.tuijian2 {
+  display: flex;
+  justify-content: space-between;
+}
+/* 推荐导航 */
+.tuijiandaohang {
   display: flex;
   flex-direction: column;
-  justify-content: center;
-  box-shadow: 1px 1px;
+
   margin: 100px;
+}
+/* 推荐块 */
+.tuijiankuai {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  border-radius: 8px;
+  box-shadow: 1px 1px 1px 3px rgb(85, 117, 132);
+
+  width: 70vh;
+  height: 70vh;
+  backdrop-filter: blur(5px);
+}
+/* 推荐内容 */
+.tuijian2 {
+  display: flex;
+  flex: 1;
+}
+/* 左侧 */
+.zuoche {
+  display: flex;
+  flex-direction: column;
+
+  width: 15%;
+  height: 100%;
+  /* border-radius: 10px; */
+}
+/* 今日热点内容 */
+.redianneirong {
+  display: flex;
+  box-shadow: 8px;
+  backdrop-filter: blur(20px);
+  box-shadow: 1px 1px 3px 3px;
+  max-width: 100%;
+  height: 500px;
+  border-radius: 10px;
 }

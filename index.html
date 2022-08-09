@@ -4,72 +4,199 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="./css/style.css" />
-    <title>  登录页面</title>
+    <title>导航</title>
+    <link rel="stylesheet" href="./lianx.css" />
   </head>
-  <style>
-    * {
-  margin: 0;
-  padding: 0;
-  box-sizing: 0;
-  /* box-shadow: 1px 1px; */
-}
-input {
-  outline: none;
-  border-radius: 4px;
-}
+  <style></style>
 
-body {
-  height: 700px;
-
-  display: flex;
-  justify-content: center;
-  align-items: center;
-
-  background: linear-gradient(to right, rgb(237, 197, 204), rgb(164, 214, 234));
-}
-
-.box1 {
-  width: 600px;
-  height: 300px;
-  display: flex;
-  border: 2px solid;
-  border-radius: 10px;
-  background: linear-gradient(to right, rgb(220, 170, 178), rgb(131, 204, 232));
-  align-items: center;
-  justify-content: center;
-  backdrop-filter: blur(1px);
-}
-.box2,
-.box3 {
-  display: flex;
-  flex: 1;
-  border-radius: 10px;
-  flex-direction: column;
-  justify-content: flex-start;
-  align-items: center;
-}
-
-</style>
   <body>
     <div class="box">
-      <div class="box1">
-        <div class="box2">
-          <h1>注册</h1>
-          <input type="text" value="账号" />
-          <input type="text" value="密码" />
-          <input type="text" value="再次输入密码" />
-          <button style"width:20%>注册</button>
-          <p>已有账号去登录</p>
+      <div class="tou">
+        <img
+          class="toutu"
+          src="./preview.jpg"
+          alt="头图"
+          width="auot"
+          height="auot"
+        />
+      </div>
+      <div class="box2">
+        <!-- 左侧 -->
+        <div class="zuoche">
+          <br />
+          <!-- 我的区域 -->
+          <div class="wode">
+            <div>
+              <img class="touxiang" src="./toutu2.png" alt="touxiang" />
+            </div>
+            <div class="gerenxinxi">
+              <h4>谢谢</h4>
+              <br />
+              <p>私信我</p>
+              <br />
+              <p>关于我</p>
+            </div>
+          </div>
+          <!-- 导航栏 -->
+          <div class="daohang">
+            <b style="height: 100px">导航推荐</b>
+            <b><a href="https://space.bilibili.com/34786453">宝藏up康文昌</a></b
+            ><br />
+            <b><a href="https://www.runoob.com/">菜鸟教程</a></b>
+          </div>
         </div>
-
-        <div class="box3">
-          <h1>登陆</h1>
-
-          <input type="text" value="账号" />
-          <input type="text" value="密码" />
-          <button style"width:20%>登录</button>
-          <p>没有账号去注册</p>
+        <!-- 内容 -->
+        <div class="neirong">
+          <div id="box1">
+            <input type="search" name="search" placeholder="请输入关键字"/></div>
+          <div class="tuijiandaohang">
+            <!-- 推荐导航内容 -->
+            <div class="tuijiankuai">
+              <div class="tuijian2">
+                <div>
+                  <table align="center" ;width="auot">
+                    <tr>
+                      <th>导航</th>
+                    </tr>
+                    <tr>
+                      <td>百度</td>
+                      <td>搜狗</td>
+                      <td>360</td>
+                    </tr>
+                  </table>
+                </div>
+                <div>
+                  <table>
+                    <tr>
+                      <th>购物</th>
+                    </tr>
+                    <td>淘宝</td>
+                    <td>京东</td>
+                    <td>天猫</td>
+                  </table>
+                </div>
+                <div>
+                  <table>
+                    <tr>
+                      <th>购物</th>
+                    </tr>
+                    <td>淘宝</td>
+                    <td>京东</td>
+                    <td>天猫</td>
+                  </table>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- 右侧区域 -->
+        <div class="youche">
+          <b style="height: 100px "
+            ><br />
+            今日热点</b
+          >
+          <!-- 热点内容 -->
+          <div class="redianneirong">
+            <div class="Cons" id="Con11">
+              <table cellspacing="0">
+                <tbody>
+                  
+                      <!-- //可以在这里对列表样式对应设置一般都是<li>...</li> -->
+                    
+                  </script>
+                  <tr>
+                    <td>1</td>
+                    <td class="ConsTi">
+                      <a
+                        href="https://news.sina.com.cn/o/2022-07-29/doc-imizirav5860715.shtml"
+                        target="_blank"
+                        >这次中美通话，10个很不同寻常的细节！</a
+                      >
+                    </td>
+                    <td>北京日报客户端</td>
+                    <td>07-29 08:01</td>
+                    <!-- <td><a href='' target='_blank'>发表评论</a></td> -->
+                  </tr>
+                  <tr>
+                    <td>2</td>
+                    <td class="ConsTi">
+                      <a
+                        href="https://news.sina.com.cn/o/2022-07-29/doc-imizirav5837839.shtml"
+                        target="_blank"
+                        >中央定调下半年中国经济 释放五大重要信号</a
+                      >
+                    </td>
+                    <td>中国新闻网</td>
+                    <td>07-29 00:37</td>
+                    <!-- <td><a href='' target='_blank'>发表评论</a></td> -->
+                  </tr>
+                  <tr>
+                    <td>3</td>
+                    <td class="ConsTi">
+                      <a
+                        href="https://news.sina.com.cn/w/2022-07-29/doc-imizmscv3962455.shtml"
+                        target="_blank"
+                        >缅怀中国人民志愿军 金正恩参谒友谊塔</a
+                      >
+                    </td>
+                    <td>央视网</td>
+                    <td>07-29 07:32</td>
+                    <!-- <td><a href='' target='_blank'>发表评论</a></td> -->
+                  </tr>
+                  <tr>
+                    <td>4</td>
+                    <td class="ConsTi">
+                      <a
+                        href="https://news.sina.com.cn/c/2022-07-28/doc-imizmscv3938450.shtml"
+                        target="_blank"
+                        >台媒：佩洛西来不来，美国都是输</a
+                      >
+                    </td>
+                    <td>参考消息</td>
+                    <td>07-28 23:51</td>
+                    <!-- <td><a href='' target='_blank'>发表评论</a></td> -->
+                  </tr>
+                  <tr>
+                    <td>5</td>
+                    <td class="ConsTi">
+                      <a
+                        href="https://news.sina.com.cn/w/2022-07-29/doc-imizmscv3981463.shtml"
+                        target="_blank"
+                        >韩国“正祖大王”号驱逐舰下水 第一夫人挥斧子砍断缆绳</a
+                      >
+                    </td>
+                    <td>海外网</td>
+                    <td>07-29 09:58</td>
+                    <!-- <td><a href='' target='_blank'>发表评论</a></td> -->
+                  </tr>
+                  <tr>
+                    <td>6</td>
+                    <td class="ConsTi">
+                      <a
+                        href="https://news.sina.com.cn/c/2022-07-29/doc-imizmscv3960518.shtml"
+                        target="_blank"
+                        >香港体育馆发生严重事故 相关部门成立调查小组</a
+                      >
+                    </td>
+                    <td>央视网</td>
+                    <td>07-29 07:04</td>
+                    <!-- <td><a href='' target='_blank'>发表评论</a></td> -->
+                  </tr>
+                  <tr>
+                    <td>7</td>
+                    <td class="ConsTi">
+                      <a
+                        href="https://news.sina.com.cn/c/2022-07-29/doc-imizirav5854502.shtml"
+                        target="_blank"
+                        >“里根”号航母再进南海想干啥？专家：很可能为佩洛西访台做准备</a
+                   
+                  </tr>
+                </tbody>
+              </table>
+              <!-- 列表 end -->
+            </div>
+            <br />
+          </div>
         </div>
       </div>
     </div>
